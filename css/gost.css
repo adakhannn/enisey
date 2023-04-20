@@ -1,0 +1,85 @@
+
+#infobardm {
+		color: #FFF !important;
+		background: #7ABBEA !important;
+		padding: 10px !important;
+		z-index:1000 !important;
+		font-size:14px !important;
+		width:90% !important;
+		margin:0 auto;
+		font-weight: bold !important;
+		text-align: center !important;
+		display:none;
+    }
+    .eye {    	display:inline-block;
+    	height:36px;
+    	line-height:36px;
+    	white-space:nowrap;
+    	background:transparent !important;
+    	margin:5px 2px 15px;
+    }
+    .eye a, .eye a:hover {    	display:inline-block;
+    	width:auto;
+    	padding:5px;
+
+    }
+    .dmchangea1:hover, .dmchangea2:hover, .dmdisableimage:hover, .dmenableimage:hover {
+		cursor: pointer !important;
+		padding:5px !important;
+		background: #000000 !important;
+		color: #FFF !important;
+    }
+    a.dmchangea1, a.dmchangea2, a.dmchangea3, a.dmdisableimage,  a.dmcolor4, a.dmenableimage, a.dmdisableimage {
+		color:#fff !important;
+    }
+    a.dmcolor1, a.dmcolor3 {
+		color: #000 !important;
+    }
+    .dmchangea3:hover {
+		cursor: pointer !important;
+		padding:8px !important;
+		background: #000000 !important;
+		color: #FFF !important;
+    }
+    .dmchangea1 {
+		padding:5px !important;
+		font-size:14px !important;
+		font-weight: bold !important;
+    }
+    .dmchangea2 {
+		padding:5px !important;
+		font-size:18px !important;
+		font-weight: bold !important;
+    }
+    .dmchangea3 {
+		padding:8px !important;
+		font-size:23px !important;
+		font-weight: bold !important;
+    }
+    .none {display:none !important;}
+    .yesimg {display:block !important;}
+
+    .dmdisableimage, .dmenableimage {
+		padding:5px !important;
+		font-size:14px !important;
+		font-weight: bold !important;
+    }
+    .dmimageActive {
+		color:#ffffff !important;
+		fontSize:14px !important;
+		background:#000000 !important;
+    }
+    .dmchangeaActive {color:#ffffff !important; background:#000000 !important;}
+    .dmcolor1,.dmcolor1:hover {margin-left:1%;background:#FFFFFF !important;width:1%;padding:7px;border:soild 1px black;font-weight: bold; cursor: pointer;}
+    .dmcolor2,.dmcolor2:hover  {margin-left:1%;background:#000000!important;color:#fff !important;width:1%;padding:7px;border:soild 1px black;font-weight: bold; cursor: pointer;}
+    .dmcolor3,.dmcolor3:hover  {margin-left:1%;background:#9DD1FF !important;width:1%;padding:7px;border:soild 1px black;font-weight: bold; cursor: pointer;}
+    .dmcolor4 {margin-left:1%;background:#003064 !important;color:#fff !important;width:1%;padding:7px;border:soild 1px black;font-weight: bold; cursor: pointer;}
+    .dmcolor4:hover {color:#E2E2E2 !important;}
+    .dmchangecolor2_style {background:#000  !important; color:#fff !important;}
+    .dmchangecolor3_style {background:#9DD1FF  !important; color:#063462 !important;}
+
+#CecutientOn {	cursor:pointer;
+}
+
+#CecutientOn:hover {
+}
