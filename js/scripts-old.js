@@ -238,6 +238,7 @@ jQuery(window).scroll(function(){
 // Отображение подменю при наведении
 
 $('nav li').hover(function () {
+    console.log('почему');
     $('ul',this).slideToggle(100);
 });
 
