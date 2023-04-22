@@ -38,6 +38,16 @@
   .persons {
     gap: 20px 10px;
   }
+
+  .header-top .block-top-games {
+    display: grid;
+    grid-template-columns: calc((100% - 190px) / 2) 190px calc((100% - 190px) / 2);
+  }
+
+  .header-top .top-game {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -431,7 +441,6 @@
 
   .header-top .top-game {
     width: 100%;
-    height: 200px;
   }
 
   .header-top .top-game .team .team-logo img {
@@ -439,11 +448,6 @@
     height: auto;
     position: relative;
     top: 5px;
-  }
-
-  .header-top .top-game .count {
-    top: -4px;
-    position: relative;
   }
 
   .header-top .top-game .team .team-title {
@@ -487,7 +491,9 @@
     width: 100%;
     display: block;
   }
+}
 
+@media screen and (max-width: 370px) {
   .persons {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -223,10 +223,14 @@ summary {
   --black: #000000;
   --black-opacity: 0, 0, 0;
   --red: #BA1515;
+  --red-light: #E10A19;
+  --red-dark: #992A21;
   --blue: #002C58;
   --blue-opacity: 0, 44, 88;
   --gray-light: #CDD3D9;
   --gray-light-opacity: 205, 211, 217;
+  --blue-dark: #002142;
+  --blue-dark-opacity: 0, 33, 66;
 }
 
 
@@ -641,6 +645,8 @@ header .top-red .right a:hover {
   -webkit-justify-content: space-between;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px;
 }
 
 
@@ -651,8 +657,7 @@ header .top-red .right a:hover {
 }
 
 .header-top .chage-team span.active {
-  color: #d1d9de;
-  background-color: rgba(20, 36, 52, .9);
+  background-color: rgba(20, 36, 52, 0.75);
   cursor: default;
 }
 
@@ -662,23 +667,20 @@ header .top-red .right a:hover {
 
 
 .header-top .chage-team span {
-  color: rgba(255, 255, 255, .9);
+  color: var(--white);
   font-family: 'RobotoCondensed', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
-  padding: 0 8px;
+  padding: 10px;
   position: relative;
-  margin-right: 5px;
   cursor: pointer;
-  height: 27px;
-  line-height: 27px;
   display: inline-block;
 }
 
 .header-top .top-game {
   background-color: rgba(20, 36, 52, .6);
-  height: 230px;
   overflow: hidden;
   width: 390px;
   position: relative;
@@ -697,19 +699,15 @@ header .top-red .right a:hover {
 }
 
 .header-top .top-game .title {
-  color: rgba(150, 190, 220, .7);
+  color: var(--white);
   font-size: 16px;
   line-height: 20px;
   font-family: 'RobotoCondensed', sans-serif;
   font-weight: normal;
   text-align: center;
-  display: block;
-  padding: 10px 4px;
-  margin-bottom: 10px;
-  height: 40px;
+  padding: 10px;
   overflow: hidden;
-  background-color: rgba(8, 20, 35, .3);
-  border-bottom: 1px rgba(255, 255, 255, .05) solid;
+  background-color: rgba(var(--blue-dark-opacity), 0.5);
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -717,26 +715,28 @@ header .top-red .right a:hover {
 }
 
 .header-top .top-game .result {
-  display: flex;
-  display: -webkit-flex;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: calc((100% - 100px) / 2) 100px calc((100% - 100px) / 2);
 }
 
 .header-top .top-game .team {
-  display: inline-block;
-  width: 37%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-align: center;
   margin: auto;
-  padding: 0 7px;
+  padding: 5px;
 }
 
 .header-top .top-game .team .team-logo {
-  height: 80px;
   display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-justify-content: center;
+  padding: 10px 0;
 }
 
 .header-top .top-game .team .team-logo img {
@@ -747,19 +747,20 @@ header .top-red .right a:hover {
 }
 
 .header-top .top-game .team .team-title {
-  color: #cdd3d9;
+  color: var(--white);
   font-family: 'RobotoCondensed', sans-serif;
   font-size: 12px;
+  line-height: 16px;
   text-transform: uppercase;
   display: block;
   padding: 5px 0;
+  font-weight: 700;
 }
 
 .header-top .top-game .count {
   display: inline-block;
   width: 110px;
   background-color: rgba(255, 255, 255, .05);
-  padding: 8px 2px;
   color: #fff;
   text-align: center;
   margin: auto;
@@ -788,19 +789,17 @@ header .top-red .right a:hover {
 }
 
 .header-top .top-game .desc {
-  background-color: rgba(8, 20, 35, .3);
-  color: rgba(150, 190, 220, .7);
+  background-color: rgba(var(--blue-dark-opacity), 0.5);;
+  color: var(--white);
   font-family: 'RobotoCondensed', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
+  line-height: 22px;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   height: 50px;
-  line-height: 50px;
-  border-top: 1px rgba(255, 255, 255, .05) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-top .top-game .desc i {
@@ -808,11 +807,10 @@ header .top-red .right a:hover {
 }
 
 .header-top .top-game .desc a {
-  color: rgba(225, 65, 55, .8);
+  color: var(--red-light);
   font-family: 'RobotoCondensed', sans-serif;
-  font-weight: bold;
-  margin-left: 20px;
-  /*border-bottom:1px #e2001a solid;*/
+  font-weight: 700;
+  margin-left: 15px;
   position: relative;
 }
 
@@ -828,10 +826,14 @@ header .top-red .right a:hover {
 .header-logo {
   display: inline-block;
   position: relative;
-  width: calc(100% - 808px);
   text-align: center;
   top: 5px;
   vertical-align: top;
+}
+
+.header-logo a {
+  display: flex;
+  justify-content: center;
 }
 
 .header-top-other {
@@ -1473,6 +1475,10 @@ header .top-red .right a:hover {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+.content .stats .stat-table--red th {
+  background-color: var(--red-dark);
 }
 
 .content .stats.main .stat-table tr:nth-child(2n) {
@@ -3669,4 +3675,11 @@ footer .map:hover:after {
   color: var(--white);
   transition: 0.3s;
   z-index: 3;
+}
+
+.tables {
+  display: grid;
+  align-items: flex-start;
+  gap: 10px;
+  grid-template-columns: 60% auto;
 }
