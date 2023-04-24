@@ -15,6 +15,7 @@
     <link href="plugins/jquery.rd-parallax/rd-parallax.css" rel="stylesheet">
     <link href="css/gost.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="plugins/tiny-slider/tiny-slider.css" rel="stylesheet">
 </head>
 <body class="body">
 <div id="scrollup">
@@ -146,7 +147,9 @@
             </nav>
             <div class="header-top">
                 <div class="mobil-logo">
-                    <a href="/"><img src="/images/logo.png"></a>
+                    <a href="/">
+                        <img src="/images/logo.png">
+                    </a>
                 </div>
                 <div class="chage-team">
                     <span class="" data-team="mainteam">Енисей</span>
@@ -245,6 +248,147 @@
                         <div class="desc">8 марта в 11:00<a href="#">Протокол</a></div>
                     </div>
                 </div>
+                <div class="matches">
+                    <ul class="matches__list js-tiny-slider"
+                        data-controls-container=".js-matches-controls"
+                        data-controls="true"
+                        data-nav="true"
+                        data-nav-container=".js-matches-nav"
+                        data-items="3"
+                        data-loop="true"
+                        data-autoplay="true"
+                        data-autoplay-timeout="10000"
+                        data-autoplay-over-pause="true"
+                        data-speed="1000"
+                        data-mouse-drag="true"
+                        data-gutter="20"
+                        data-touch="true"
+                        data-responsive='{
+                           "320": {
+                               "items": "1",
+                               "nav": true
+                           },
+                           "780": {
+                               "items": "2",
+                               "nav": false
+                           },
+                           "1250": {
+                               "items": "3"
+                           }
+                        }'
+                    >
+                        <li class="matches__item">
+                            <a class="matches__link" href="#">
+                                <p class="matches__top">16 ноября, среда</p>
+                                <div class="matches__content">
+                                    <div class="matches__teams">
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Уральский трубник</p>
+                                        </div>
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Очень длинное название команды на несколько строчек</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches__points">
+                                        <p class="matches__point">5</p>
+                                        <p class="matches__point">99</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="matches__item">
+                            <a class="matches__link" href="#">
+                                <p class="matches__top">16 ноября, среда</p>
+                                <div class="matches__content">
+                                    <div class="matches__teams">
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Уральский трубник</p>
+                                        </div>
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Очень длинное название команды на несколько строчек</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches__points">
+                                        <p class="matches__point">5</p>
+                                        <p class="matches__point">99</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="matches__item">
+                            <a class="matches__link" href="#">
+                                <p class="matches__top">16 ноября, среда</p>
+                                <div class="matches__content">
+                                    <div class="matches__teams">
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Уральский трубник</p>
+                                        </div>
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Очень длинное название команды на несколько строчек</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches__points">
+                                        <p class="matches__point">5</p>
+                                        <p class="matches__point">99</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="matches__item">
+                            <a class="matches__link" href="#">
+                                <p class="matches__top">16 ноября, среда</p>
+                                <div class="matches__content">
+                                    <div class="matches__teams">
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Уральский трубник</p>
+                                        </div>
+                                        <div class="matches__team">
+                                            <img class="matches__img" src="/images/dev/dev-square-40x40.png" width="40" height="40" alt="Лого команды">
+                                            <p class="matches__name">Очень длинное название команды на несколько строчек</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches__points">
+                                        <p class="matches__point">5</p>
+                                        <p class="matches__point">99</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="matches__arrows js-matches-controls">
+                        <a class="matches__arrow">
+                            <svg class="matches__icon" width="30" height="70">
+                                <use xlink:href="/images/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a class="matches__arrow matches__arrow--right">
+                            <svg class="matches__icon" width="30" height="70">
+                                <use xlink:href="/images/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="points js-matches-nav">
+                        <li class="points__item">
+                            <div class="points__circle"></div>
+                        </li>
+                        <li class="points__item">
+                            <div class="points__circle"></div>
+                        </li>
+                        <li class="points__item">
+                            <div class="points__circle"></div>
+                        </li>
+                        <li class="points__item">
+                            <div class="points__circle"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -259,6 +403,22 @@
                 <div class="tables">
                     <div class="tables__item">
                         <h2 class="title-h">Турнирные таблицы</h2>
+                        <ul class="filters">
+                            <li class="filters__item filters__item--105">
+                                <select class="js-select">
+                                    <option>Енисей-1</option>
+                                    <option>вариант 1</option>
+                                    <option>вариант 2 длинный в несколько строчек длинный</option>
+                                </select>
+                            </li>
+                            <li class="filters__item filters__item--260">
+                                <select class="js-select">
+                                    <option>Кубок россии 2022. первый этап</option>
+                                    <option>вариант 1</option>
+                                    <option>вариант 2 длинный в несколько строчек длинный</option>
+                                </select>
+                            </li>
+                        </ul>
                         <table class="stat-table">
                             <thead>
                             <tr>
@@ -392,6 +552,8 @@
 <script src="js/scripts-old.js"></script>
 <script src="js/gost.js"></script>
 <script src="plugins/jquery.rd-parallax/jquery.rd-parallax.js"></script>
+<script src="plugins/tiny-slider/tiny-slider.js"></script>
+<script src="plugins/jquery.samselect/jquery.samselect.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

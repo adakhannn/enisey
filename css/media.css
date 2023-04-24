@@ -24,6 +24,19 @@
   .persons {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .matches {
+    padding: 0 35px;
+  }
+
+  .matches__arrow {
+    right: 0;
+  }
+
+  .matches__arrow--right {
+    left: 0;
+    right: auto;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -47,6 +60,15 @@
   .header-top .top-game {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  .matches__content {
+    padding: 15px 25px;
+  }
+
+  .matches__point {
+    font-size: 26px;
+    line-height: 30px;
   }
 }
 
@@ -86,6 +108,20 @@
 
   .persons {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .matches__content {
+    padding: 15px 20px;
+  }
+
+  .matches__point {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .tables {
+    grid-template-columns: 100%;
+    gap: 0;
   }
 }
 
@@ -424,11 +460,52 @@
   .persons {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .matches__top {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .matches__content {
+    padding: 15px;
+  }
+
+  .matches__teams {
+    gap: 10px;
+  }
+
+  .matches__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .matches__point {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .matches__arrow {
+    top: calc(50% - 55px);
+  }
 }
 
 @media screen and (max-width: 650px) {
   .persons {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .matches__point {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - 30px) / 3));
+  }
+
+  .filters__item {
+    width: 100%;
   }
 }
 
@@ -491,11 +568,53 @@
     width: 100%;
     display: block;
   }
+
+  .matches__top {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .matches__content {
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .matches__teams {
+    gap: 5px;
+  }
+
+  .matches__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .matches__point {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .matches__arrows {
+    display: none;
+  }
+
+  .matches {
+    padding: 0;
+  }
+
+  .filters {
+    gap: 10px;
+    grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+  }
 }
 
 @media screen and (max-width: 370px) {
   .persons {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filters {
+    gap: 10px;
+    grid-template-columns: 100%;
   }
 }
 
