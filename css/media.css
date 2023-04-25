@@ -29,13 +29,25 @@
     padding: 0 35px;
   }
 
-  .matches__arrow {
+  .slides {
+    padding: 0 35px;
+  }
+
+  .arrows__item {
     right: 0;
   }
 
-  .matches__arrow--right {
+  .arrows__item--right {
     left: 0;
     right: auto;
+  }
+
+  .media__container {
+    padding: 20px;
+  }
+
+  .trophies {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -69,6 +81,21 @@
   .matches__point {
     font-size: 26px;
     line-height: 30px;
+  }
+
+  .media__name {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .trophies__sum {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .birthdate__number {
+    font-size: 44px;
+    line-height: 44px;
   }
 }
 
@@ -122,6 +149,58 @@
   .tables {
     grid-template-columns: 100%;
     gap: 0;
+  }
+
+  .buttons__navigation {
+    gap: 25px;
+  }
+
+  .media__info {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .media__date {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .media__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .media__preview {
+    grid-template-columns: 100%;
+  }
+
+  .trophies__sum {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .birthdate__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .birthdate__role {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .birthdate__date {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .birthdate__number {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .birthdate {
+    gap: 25px;
   }
 }
 
@@ -182,13 +261,15 @@
     left: calc(50% - 35px);
   }
 
-  .content .block-press .all-news {
+  .content .block-press .all-news,
+  .content .block-video .all-news {
     position: relative;
     top: 0;
     right: 0;
     left: 0;
     text-align: center;
     padding: 10px 0;
+    margin: 0 0 30px;
   }
 
   .top-news {
@@ -484,8 +565,69 @@
     line-height: 26px;
   }
 
-  .matches__arrow {
+  .arrows__item {
     top: calc(50% - 55px);
+  }
+
+  .buttons__navigation {
+    gap: 20px;
+  }
+
+  .media__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .media__date {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .media__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .trophies__sum {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .trophies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .birthdate__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .birthdate__role {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .birthdate__date {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .birthdate__number {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .birthdate {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .birthdate__content {
+    padding: 15px;
+  }
+
+  .birthdate__row {
+    gap: 10px;
   }
 }
 
@@ -506,6 +648,61 @@
 
   .filters__item {
     width: 100%;
+  }
+
+  .buttons__navigation {
+    gap: 15px;
+  }
+
+  .media__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .media__container {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .media__play {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+  }
+
+  .trophies__sum {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .trophies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .birthdate__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .birthdate__role {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .birthdate__date {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .birthdate__number {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .birthdate {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -593,7 +790,7 @@
     line-height: 22px;
   }
 
-  .matches__arrows {
+  .arrows {
     display: none;
   }
 
@@ -601,9 +798,107 @@
     padding: 0;
   }
 
+  .slides {
+    padding: 0;
+  }
+
   .filters {
     gap: 10px;
     grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+  }
+
+  .buttons__navigation {
+    gap: 10px;
+  }
+
+  .media__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .media__info {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .media__date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .media__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .media__play {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+  }
+
+  .slides__content {
+    gap: 10px;
+  }
+
+  .slides__link {
+    gap: 15px;
+  }
+
+  .slides__play {
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+  }
+
+  .trophies__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .trophies__sum {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .block-trophy .container-center {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .birthdate__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .birthdate__role {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .birthdate__date {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .birthdate__number {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .birthdate {
+    gap: 10px;
+  }
+
+  .birthdate__content {
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  .birthdate__row {
+    gap: 5px;
   }
 }
 
@@ -615,6 +910,10 @@
   .filters {
     gap: 10px;
     grid-template-columns: 100%;
+  }
+
+  .trophies {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

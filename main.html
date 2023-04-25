@@ -362,19 +362,19 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="matches__arrows js-matches-controls">
-                        <a class="matches__arrow">
-                            <svg class="matches__icon" width="30" height="70">
+                    <div class="arrows js-matches-controls">
+                        <a class="arrows__item">
+                            <svg class="arrows__icon" width="30" height="70">
                                 <use xlink:href="/images/sprite.svg#arrow-right"></use>
                             </svg>
                         </a>
-                        <a class="matches__arrow matches__arrow--right">
-                            <svg class="matches__icon" width="30" height="70">
+                        <a class="arrows__item arrows__item--right">
+                            <svg class="arrows__icon" width="30" height="70">
                                 <use xlink:href="/images/sprite.svg#arrow-right"></use>
                             </svg>
                         </a>
                     </div>
-                    <ul class="points js-matches-nav">
+                    <ul class="points points--dark js-matches-nav">
                         <li class="points__item">
                             <div class="points__circle"></div>
                         </li>
@@ -459,39 +459,558 @@
                     </div>
                     <div class="tables__item">
                         <h2 class="title-h">Статистика</h2>
-                        <table class="stat-table stat-table--red">
-                            <thead>
-                            <tr>
-                                <th>М</th>
-                                <th>Игрок</th>
-                                <th>И</th>
-                                <th>В</th>
-                                <th>Н</th>
-                                <th>О</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
-                                <td>26</td>
-                                <td>23</td>
-                                <td>0</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
-                                <td>26</td>
-                                <td>20</td>
-                                <td>2</td>
-                                <td>4</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <section class="buttons">
+                            <ul class="buttons__navigation js-tabs" data-cont-id="tabs-content-players">
+                                <li class="buttons__item js-active" data-tab-id="tab-players-all">
+                                    <a class="buttons__link">Все игроки</a>
+                                </li>
+                                <li class="buttons__item" data-tab-id="tab-players-goalkeepers">
+                                    <a class="buttons__link">Вратари</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="buttons">
+                            <div class="buttons__content" id="tabs-content-players">
+                                <div class="buttons__pane js-tab-cont js-show buttons__pane--active" id="tab-players-all">
+                                    <table class="stat-table stat-table--red">
+                                        <thead>
+                                        <tr>
+                                            <th>М</th>
+                                            <th>Игрок</th>
+                                            <th>И</th>
+                                            <th>В</th>
+                                            <th>Н</th>
+                                            <th>О</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
+                                            <td>26</td>
+                                            <td>23</td>
+                                            <td>0</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
+                                            <td>26</td>
+                                            <td>20</td>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="buttons__pane js-tab-cont" id="tab-players-goalkeepers">
+                                    <table class="stat-table stat-table--red">
+                                        <thead>
+                                        <tr>
+                                            <th>М</th>
+                                            <th>Вратарь</th>
+                                            <th>И</th>
+                                            <th>В</th>
+                                            <th>Н</th>
+                                            <th>О</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
+                                            <td>26</td>
+                                            <td>23</td>
+                                            <td>0</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><div class="logo"><img src="/images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>
+                                            <td>26</td>
+                                            <td>20</td>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
                         <div class="all-table"><a href="#">Показать еще</a></div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="block-press">
+            <div class="container-center">
+                <h2 class="title-h">Новости</h2>
+                <div class="all-news">
+                    <a href="#">Все новости</a>
+                </div>
+                <div class="media media--dark">
+                    <a class="media__preview" href="#">
+                        <div class="media__content">
+                            <p class="media__info">Актуальная новость</p>
+                            <div class="media__container">
+                                <p class="media__name">"Енисей" (Красноярск) - сб. Суперлиги 6:6 (25-09-2022). Самое интересное.</p>
+                                <p class="media__text">«Енисей» потерпел второе поражение подряд. На сей раз нашим «обидчиком» стал нижегородский «Старт». Игра на поле соперника завершилась со счётом 4:3 в пользу хозяев.</p>
+                                <p class="media__date">26.09.2022</p>
+                            </div>
+                        </div>
+                        <img class="media__img" src="/images/dev/dev-rectangle-930x520.png" width="930" height="520" alt="Превью новости">
+                    </a>
+                    <div class="slides slides--dark">
+                        <ul class="slides__list js-tiny-slider"
+                            data-controls-container=".js-news-controls"
+                            data-controls="true"
+                            data-nav="true"
+                            data-nav-container=".js-news-nav"
+                            data-items="3"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="10000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-mouse-drag="true"
+                            data-gutter="20"
+                            data-touch="true"
+                            data-responsive='{
+                           "320": {
+                               "items": "1",
+                               "nav": true
+                           },
+                           "780": {
+                               "items": "2",
+                               "nav": false
+                           },
+                           "1250": {
+                               "items": "3"
+                           }
+                        }'
+                        >
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Очень длинный заголовок новости на несколько строчек для тестирования</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей". Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="arrows js-news-controls">
+                            <a class="arrows__item">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                            <a class="arrows__item arrows__item--right">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="points points--dark js-news-nav">
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-video main">
+            <div class="container-center">
+                <h2 class="title-h white">Видео</h2>
+                <div class="all-news white">
+                    <a href="#">Все видео</a>
+                </div>
+                <div class="media media--light">
+                    <a class="media__preview" href="#">
+                        <div class="media__relative">
+                            <img class="media__img" src="/images/dev/dev-rectangle-930x520.png" width="930" height="520" alt="Превью новости">
+                            <svg class="media__play" width="150" height="150">
+                                <use xlink:href="/images/sprite.svg#play"></use>
+                            </svg>
+                        </div>
+                        <div class="media__content">
+                            <p class="media__info">Актуальное видео</p>
+                            <div class="media__container">
+                                <p class="media__name">"Енисей" (Красноярск) - сб. Суперлиги 6:6 (25-09-2022). Самое интересное.</p>
+                                <p class="media__date">26.09.2022</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="slides slides--light">
+                        <ul class="slides__list js-tiny-slider"
+                            data-controls-container=".js-videos-controls"
+                            data-controls="true"
+                            data-nav="true"
+                            data-nav-container=".js-videos-nav"
+                            data-items="3"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="10000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-mouse-drag="true"
+                            data-gutter="20"
+                            data-touch="true"
+                            data-responsive='{
+                           "320": {
+                               "items": "1",
+                               "nav": true
+                           },
+                           "780": {
+                               "items": "2",
+                               "nav": false
+                           },
+                           "1250": {
+                               "items": "3"
+                           }
+                        }'
+                        >
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью видео">
+                                        <svg class="slides__play" width="100" height="100">
+                                            <use xlink:href="/images/sprite.svg#play"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью видео">
+                                        <svg class="slides__play" width="100" height="100">
+                                            <use xlink:href="/images/sprite.svg#play"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью видео">
+                                        <svg class="slides__play" width="100" height="100">
+                                            <use xlink:href="/images/sprite.svg#play"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью видео">
+                                        <svg class="slides__play" width="100" height="100">
+                                            <use xlink:href="/images/sprite.svg#play"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Очень длинный заголовок новости на несколько строчек для тестирования</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей". Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="arrows js-videos-controls">
+                            <a class="arrows__item">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                            <a class="arrows__item arrows__item--right">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="points points--light js-videos-nav">
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-trophy">
+            <div class="container-center">
+                <h2 class="title-h">Трофеи</h2>
+                <ul class="trophies">
+                    <li class="trophies__item">
+                        <img class="trophies__img" src="/images/cup-1.png" width="230" height="230" alt="Изображение кубка 1">
+                        <div class="trophies__row">
+                            <p class="trophies__sum">16</p>
+                            <p class="trophies__name">Чемпионат России и СССР</p>
+                        </div>
+                    </li>
+                    <li class="trophies__item">
+                        <img class="trophies__img" src="/images/cup-2.png" width="230" height="230" alt="Изображение кубка 2">
+                        <div class="trophies__row">
+                            <p class="trophies__sum">999</p>
+                            <p class="trophies__name">Очень длинное название турнира на несколько строчек</p>
+                        </div>
+                    </li>
+                    <li class="trophies__item">
+                        <img class="trophies__img" src="/images/cup-3.png" width="230" height="230" alt="Изображение кубка 3">
+                        <div class="trophies__row">
+                            <p class="trophies__sum">16</p>
+                            <p class="trophies__name">Чемпионат России и СССР</p>
+                        </div>
+                    </li>
+                    <li class="trophies__item">
+                        <img class="trophies__img" src="/images/cup-4.png" width="230" height="230" alt="Изображение кубка 4">
+                        <div class="trophies__row">
+                            <p class="trophies__sum">16</p>
+                            <p class="trophies__name">Чемпионат России и СССР</p>
+                        </div>
+                    </li>
+                    <li class="trophies__item">
+                        <img class="trophies__img" src="/images/cup-5.png" width="230" height="230" alt="Изображение кубка 5">
+                        <div class="trophies__row">
+                            <p class="trophies__sum">16</p>
+                            <p class="trophies__name">Чемпионат России и СССР</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-press">
+            <div class="container-center">
+                <h2 class="title-h">Фотоальбомы</h2>
+                <div class="all-news">
+                    <a href="#">Все фото</a>
+                </div>
+                <div class="media media--dark">
+                    <div class="slides slides--dark">
+                        <ul class="slides__list js-tiny-slider"
+                            data-controls-container=".js-photos-controls"
+                            data-controls="true"
+                            data-nav="true"
+                            data-nav-container=".js-photos-nav"
+                            data-items="3"
+                            data-loop="true"
+                            data-autoplay="true"
+                            data-autoplay-timeout="10000"
+                            data-autoplay-over-pause="true"
+                            data-speed="1000"
+                            data-mouse-drag="true"
+                            data-gutter="20"
+                            data-touch="true"
+                            data-responsive='{
+                           "320": {
+                               "items": "1",
+                               "nav": true
+                           },
+                           "780": {
+                               "items": "2",
+                               "nav": false
+                           },
+                           "1250": {
+                               "items": "3"
+                           }
+                        }'
+                        >
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Поздравляем!</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slides__item">
+                                <a class="slides__link" href="#">
+                                    <div class="slides__relative">
+                                        <img class="slides__img" src="/images/dev/dev-rectangle-690x385.png" width="690" height="386" alt="Превью новости">
+                                    </div>
+                                    <div class="slides__content">
+                                        <p class="slides__title">Очень длинный заголовок новости на несколько строчек для тестирования</p>
+                                        <p class="slides__text">Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей". Сегодня свой день рождения празднует Андрей Юрьевич Пашкин, с чьим именем связаны многие достижения хоккейной команды "Енисей".</p>
+                                        <p class="slides__date">26.09.2022</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="arrows js-photos-controls">
+                            <a class="arrows__item">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                            <a class="arrows__item arrows__item--right">
+                                <svg class="arrows__icon" width="30" height="70">
+                                    <use xlink:href="/images/sprite.svg#arrow-right-full"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="points points--dark js-photos-nav">
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                            <li class="points__item">
+                                <div class="points__circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-video main">
+            <div class="container-center">
+                <h2 class="title-h white">Дни рождения</h2>
+                <ul class="birthdate">
+                    <li class="birthdate__item">
+                        <img class="birthdate__img" src="/images/dev/dev-square-630x630.png" width="630" height="630" alt="Фото персоны">
+                        <div class="birthdate__content">
+                            <p class="birthdate__date">15 декабря</p>
+                            <div class="birthdate__row">
+                                <p class="birthdate__number">19</p>
+                                <div class="birthdate__column">
+                                    <p class="birthdate__name">Артём Драничников</p>
+                                    <p class="birthdate__role">Вратарь</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="birthdate__item">
+                        <img class="birthdate__img" src="/images/dev/dev-square-630x630.png" width="630" height="630" alt="Фото персоны">
+                        <div class="birthdate__content">
+                            <p class="birthdate__date">15 декабря</p>
+                            <div class="birthdate__row">
+                                <p class="birthdate__number">19</p>
+                                <div class="birthdate__column">
+                                    <p class="birthdate__name">Очень длинное ФИО игрока на несколько строчек</p>
+                                    <p class="birthdate__role">Вратарь</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="birthdate__item">
+                        <img class="birthdate__img" src="/images/dev/dev-square-630x630.png" width="630" height="630" alt="Фото персоны">
+                        <div class="birthdate__content">
+                            <p class="birthdate__date">15 декабря</p>
+                            <div class="birthdate__row">
+                                <p class="birthdate__number">19</p>
+                                <div class="birthdate__column">
+                                    <p class="birthdate__name">Артём Драничников</p>
+                                    <p class="birthdate__role">Вратарь</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
