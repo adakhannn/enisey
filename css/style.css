@@ -235,6 +235,7 @@ summary {
   --gray-dark: #333333;
   --blue-dark: #002142;
   --blue-dark-opacity: 0, 33, 66;
+  --skyblue: #1A4A77;
 }
 
 html,
@@ -1038,7 +1039,7 @@ header .top-red .right a:hover {
   line-height: 36px;
   font-family: 'RobotoCondensed', sans-serif;
   font-weight: normal;
-  color: #333333;
+  color: var(--gray-dark);
   padding: 20px 0 40px;
   text-transform: uppercase;
   position: relative;
@@ -2398,7 +2399,7 @@ header .top-red .right a:hover {
   line-height: 36px;
   font-family: 'RobotoCondensed', sans-serif;
   font-weight: normal;
-  color: #333333;
+  color: var(--gray-dark);
   padding: 20px 0 40px;
   text-transform: uppercase;
   position: relative;
@@ -2602,7 +2603,7 @@ main.full {
   line-height: 36px;
   font-family: 'RobotoCondensed', sans-serif;
   font-weight: normal;
-  color: #333333;
+  color: var(--gray-dark);
   padding: 40px 0 40px;
   text-transform: uppercase;
   position: relative;
@@ -4226,8 +4227,8 @@ footer .map:hover:after {
 }
 
 .phead__container {
-  background-color: #1A4A77;
-  padding: 90px 130px 32px 60px;
+  background-color: var(--skyblue);
+  padding: 60px 130px 45px 60px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -4247,6 +4248,15 @@ footer .map:hover:after {
   line-height: 252px;
   color: var(--carmine);
   -webkit-text-stroke: 5px var(--white);
+  text-shadow:
+          2px 0 var(--white),
+          -2px 0 var(--white),
+          0 2px var(--white),
+          0 -2px var(--white),
+          1px 1px var(--white),
+          -1px -1px var(--white),
+          1px -1px var(--white),
+          -1px 1px var(--white);
 }
 
 .phead__img {
@@ -4320,7 +4330,7 @@ footer .map:hover:after {
   font-size: 24px;
   line-height: 34px;
   text-align: center;
-  color: #333333;
+  color: var(--gray-dark);
   padding: 5px 15px;
 }
 
@@ -4329,12 +4339,10 @@ footer .map:hover:after {
   color: var(--white);
 }
 
-.biography {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-indent: 30px;
-  text-transform: capitalize;
-  color: var(--black);
-  padding: 0 30px;
+.pbutton__content {
+  width: 100%;
+}
+
+.mobil-show {
+  display: none;
 }

@@ -17,9 +17,9 @@
     padding: 20px 10px;
   }
 
-	.persons__content {
-		padding: 10px;
-	}
+  .persons__content {
+    padding: 10px;
+  }
 
   .persons {
     grid-template-columns: repeat(3, 1fr);
@@ -48,6 +48,41 @@
 
   .trophies {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .phead {
+    gap: 8px;
+  }
+
+  .phead__container {
+    padding: 60px 100px 45px 30px;
+  }
+
+  .phead__container-right {
+    min-width: 562px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% -8%);
+  }
+
+  .phead__number {
+    font-size: 144px;
+    line-height: 176px;
+  }
+
+  .phead__text {
+    font-size: 60px;
+    line-height: 52px;
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .phead__container-right {
+    min-width: 532px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%, 0% -10%);
+  }
+
+  .phead__container {
+    padding: 50px 90px 35px 25px;
   }
 }
 
@@ -96,6 +131,48 @@
   .birthdate__number {
     font-size: 44px;
     line-height: 44px;
+  }
+
+  .phead {
+    gap: 15px;
+  }
+
+  .phead__container {
+    clip-path: none;
+    margin: 0;
+    padding: 50px 25px 25px 25px;
+    flex-shrink: 1;
+  }
+
+  .phead__container-right {
+    clip-path: none;
+    margin: 0;
+    min-width: 360px;
+  }
+
+  .phead__list {
+    transform: none;
+    padding: 50px 25px;
+  }
+
+  .phead__item {
+    transform: none;
+  }
+
+  .phead__number {
+    font-size: 150px;
+    line-height: 202px;
+  }
+
+  .phead__text {
+    font-size: 54px;
+    line-height: 66px;
+    max-width: 500px;
+  }
+
+  .phead__title {
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -202,7 +279,67 @@
   .birthdate {
     gap: 25px;
   }
+
+  .mobil-show {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .phead {
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .phead__container {
+    gap: 20px;
+    padding: 25px 20px;
+  }
+
+  .phead__img {
+    max-width: 230px;
+    max-height: 230px;
+    margin: 0 auto;
+  }
+
+  .phead__content {
+    gap: 25px;
+  }
+
+  .phead__item {
+    width: auto;
+  }
+
+  .phead__container-right {
+    min-width: 330px;
+  }
+
+  .phead__container {
+    max-width: min-content
+  }
+
+  .phead__number {
+    font-size: 114px;
+    line-height: 136px;
+  }
+
+  .phead__text {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .pbutton__navigation {
+    gap: 20px;
+  }
+
+  .pbutton__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
+
 
 @media screen and (max-width: 802px) {
   .header-top .chage-team {
@@ -629,6 +766,32 @@
   .birthdate__row {
     gap: 10px;
   }
+
+  .phead {
+    flex-direction: column;
+  }
+
+  .phead__container {
+  }
+
+  .phead__container-right {
+    min-width: 100%;
+  }
+
+  .phead__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .phead__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .pbutton__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -703,6 +866,40 @@
   .birthdate {
     gap: 15px;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .phead__number {
+    font-size: 84px;
+    line-height: 106px;
+    -webkit-text-stroke: 0;
+  }
+
+  .phead__text {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .phead__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .phead__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .phead__img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .pbutton__navigation {
+    gap: 10px;
+  }
+
+  .pbutton__link {
+    padding: 5px 10px;
   }
 }
 
@@ -900,6 +1097,16 @@
   .birthdate__row {
     gap: 5px;
   }
+
+  .phead__text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pbutton__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -914,6 +1121,40 @@
 
   .trophies {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .phead__number {
+    font-size: 54px;
+    line-height: 76px;
+  }
+
+  .phead__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .phead__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .phead__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .phead__img {
+    max-width: 190px;
+    max-height: 190px;
+  }
+
+  .pbutton__navigation {
+    gap: 0;
+  }
+
+  .pbutton__link {
+       font-size: 14px;
+       line-height: 18px;
   }
 }
 
