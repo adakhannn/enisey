@@ -155,9 +155,9 @@
                         <li>
                             <a href="#" class="nav_link" title="Перейти на главную страницу">Главная</a>
                         </li>
-                        <li>Билетная программа</li>
+                        <li>Контакты</li>
                     </ul>
-                    <h1>Билетная программа</h1>
+                    <h1>Контакты</h1>
                 </div>
             </div>
         </div>
@@ -167,63 +167,95 @@
             <main class="full">
                 <div class="detail">
                     <div class="easy-text">
-                        <p>В этом разделе Вы можете ознакомится с медиа-материалами нашего сайта. Видеоотчеты о матчах нашей команды, мероприятиях с участием игроков "Енисея", "Енисея-2" и воспитанников СШОР, другие видеоматериалы, фотогалереи - все это Вы найдете на этой страничке. <br></p>
-                        <p>Кроме того, на страничке находится ссылка на он-лайн трансляции матчей со стадиона "Енисей" - посредством веб-камер, установленных на трибунах.</p>
-                        <p>Рады представить Вашему вниманию следующие подразделы:<br></p>
-                        <p><br></p>
-                        <ul>
-                            <li>
-                                <a href="#">Фотогалерея</a>
-                            </li>
-                            <li>
-                                <a href="#">Галерея видео материалов</a>
-                            </li>
-                            <li>
-                                <a href="#">Веб-камеры на стадионе "Енисей"</a>
-                            </li>
-                        </ul>
+                        <div>
+                            <b>Информация о контактах:</b>
+                        </div>
+                        <div>
+                            <b><br></b>
+                        </div>
+                        <div>
+                            <b>Автономная некоммерческая организация "Профессиональный клуб по хоккею с мячом "Енисей"</b>
+                        </div>
+                        <div>ПОЧТОВЫЙ АДРЕС/ ЮРИДИЧЕСКИЙ АДРЕС:</div>
+                        <div>660123 г. Красноярск, ул. Юности 18&nbsp;</div>
+                        <div>phkmenisey@mail.ru&nbsp; &nbsp;</div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <b>Краевое государственное автономное учреждение&nbsp;</b>
+                        </div>
+                        <div>
+                            <b>«Спортивная школа олимпийского резерва по хоккею с мячом «Енисей»</b>
+                        </div>
+                        <div>
+                            <b>(КГАУ «СШОР по хоккею&nbsp; с мячом «Енисей»)</b>
+                        </div>
+                        <div>ПОЧТОВЫЙ АДРЕС/ ЮРИДИЧЕСКИЙ АДРЕС:</div>
+                        <div>660123 г. Красноярск, ул. Юности 18, hcenisey@mail.ru&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+                        <div>Приемная: 8(391)2269688&nbsp;</div>
+                        <div>
+                            <br>
+                        </div>
+                        <div style="font-size: medium;">
+                            <a title="Прейскурант на платные услуги" href="https://yadi.sk/i/KtQTo8MpeHT3dQ">Прейскурант на платные услуги</a>
+                            <br>
+                        </div>
+                        <div style="font-size: medium;"><br></div>
+                        <div>&nbsp;</div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <b><br></b>
                     </div>
                 </div>
+                <div class="sale-form">
+                    <h2 class="title-h">Обратная связь</h2>
+                    <form method="post" action="/feedback/index.php" class="siteform addfaq" name="feedform">
+                        <input type="hidden" name="action" value="send_message">
+                        <ul>
+                            <li class="title_table">Имя</li>
+                            <li>
+                                <input type="text" id="name" name="name" value="">
+                            </li>
+                            <li class="title_table">Ваш Email</li>
+                            <li>
+                                <input type="text" id="email" name="email" value="" required="">
+                            </li>
+                            <li class="title_table">Город</li>
+                            <li>
+                                <input type="text" id="city" name="city" value="">
+                            </li>
+                            <li class="title_table">Адресат</li>
+                            <li>
+                                <select name="subject">
+                                    <option>Выберите, кому адресуется письмо...</option>
+                                    <option value="1">&nbsp;&nbsp;—&nbsp;&nbsp;Администрации клуба</option>
+                                    <option value="2">&nbsp;&nbsp;—&nbsp;&nbsp;Главному тренеру</option>
+                                    <option value="3">&nbsp;&nbsp;—&nbsp;&nbsp;Администрации сайта</option>
+                                </select>
+                            </li>
+                            <li class="title_table">Сообщение</li>
+                            <li class="li-textarea">
+                                <textarea name="message" required=""></textarea>
+                            </li>
+                            <li class="title_table">Защитный код</li>
+                            <li>
+                                тут будет рекаптча
+                                <input class="grcode" type="text" id="grcode" name="grcode" value="" required="">
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <div id="send">
+                            <input type="submit" value="Отправить сообщение" class="send_btn">
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
             </main>
-        </div>
-    </div>
-    <div class="content">
-        <div class="block-partners">
-            <div class="container-center">
-                <div class="title-center">Партнеры команды</div>
-                <ul class="partners-list">
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="/images/dev/dev-square-170x170.png" width="170" height="170" alt="Лого партнера">
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
     <div class="clearfix"></div>
