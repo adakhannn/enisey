@@ -2391,6 +2391,15 @@ header .top-red .right a:hover {
   width: 170px;
 }
 
+.partners-list li a {
+  display: flex;
+}
+
+.partners-list li img {
+  width: 100%;
+  height: auto;
+}
+
 .content .title-center {
   font-size: 30px;
   line-height: 36px;
