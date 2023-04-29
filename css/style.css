@@ -238,6 +238,8 @@ summary {
   --skyblue: #1A4A77;
   --gray-light-1: #DFDFDF;
   --sky: #D9EEFF;
+  --bisque: #F6F6F6;
+  --azure: #AAC4EA;
 }
 
 html,
@@ -3844,6 +3846,10 @@ footer .map:hover:after {
   width: 105px;
 }
 
+.filters__item--185 {
+  width: 185px;
+}
+
 .filters__item--260 {
   width: 260px;
 }
@@ -4222,6 +4228,12 @@ footer .map:hover:after {
   padding: 30px 0;
 }
 
+.gap-20 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .phead {
   display: flex;
   font-family: "RobotoCondensed", sans-serif;
@@ -4381,27 +4393,42 @@ footer .map:hover:after {
 .table {
   width: 100%;
   border-collapse: collapse;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.table__row:nth-child(2n) {
+  background-color: var(--bisque);
+}
+
+.table__row:last-child {
+  background-color: var(--azure);
 }
 
 .table__th {
-  padding: 5px 10px;
-  color: var(--red-dark);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  height: 40px;
+  padding: 0 10px;
+  color: var(--white);
+  height: 30px;
   text-align: center;
+  background-color: var(--blue);
+}
+
+.table__th:first-child {
+  text-align: start;
 }
 
 .table__cell {
   color: var(--blue-dark);
-  font-size: 16px;
-  line-height: 22px;
   text-align: center;
-  padding: 5px 10px;
+  padding: 10px;
   height: 40px;
 }
 
+.table__cell:first-child {
+  text-align: start;
+}
 
 .table__tbody .table__row {
   border-top: 1px solid var(--gray-light-1);
@@ -4429,4 +4456,8 @@ footer .map:hover:after {
 
 .table__border-right {
   border-right: 1px solid var(--gray-light-1);
+}
+
+.table__width-150 {
+  width: 150px;
 }

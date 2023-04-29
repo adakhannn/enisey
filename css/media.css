@@ -94,6 +94,10 @@
     max-width: 250px;
     max-height: 250px;
   }
+
+  .pbutton {
+    gap: 35px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -356,6 +360,14 @@
   .phead__list {
     gap: 20px;
     padding: 30px 20px;
+  }
+
+  .table-scroll .table * {
+    width: max-content;
+  }
+
+  .pbutton {
+    gap: 30px;
   }
 }
 
@@ -826,6 +838,14 @@
   .phead__list {
     padding: 25px 15px;
   }
+
+  .pbutton {
+    gap: 25px;
+  }
+
+  .gap-20 {
+    gap: 15px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -1183,6 +1203,14 @@
   .pbutton__link {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .pbutton {
+    gap: 20px;
+  }
+
+  .gap-20 {
+    gap: 10px;
   }
 }
 

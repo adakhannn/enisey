@@ -215,10 +215,10 @@
         <div class="pbutton">
           <section class="pbutton__container">
             <ul class="pbutton__navigation js-tabs" data-cont-id="tabs-content-player">
-              <li class="pbutton__item js-active" data-tab-id="tab-player-biography">
+              <li class="pbutton__item" data-tab-id="tab-player-biography">
                 <a class="pbutton__link">Биография</a>
               </li>
-              <li class="pbutton__item" data-tab-id="tab-player-statistics">
+              <li class="pbutton__item js-active" data-tab-id="tab-player-statistics">
                 <a class="pbutton__link">Статистика</a>
               </li>
               <li class="pbutton__item" data-tab-id="tab-player-career">
@@ -231,74 +231,89 @@
           </section>
           <section class="pbutton__container">
             <div class="pbutton__content" id="tabs-content-player">
-              <div class="pbutton__pane js-tab-cont js-show pbutton__pane--active" id="tab-player-biography">
+              <div class="pbutton__pane js-tab-cont" id="tab-player-biography">
                 <div class="redactor-styles">
                   <p>Родился 4 августа 1990 года. Вратарь. Кандидат в мастера спорта. Воспитанник красноярской школы хоккея.</p>
                   <p>Выступал за команды «СКА-Свердловск» (2009), «Динамо» (Казань) (2015), «Динамо» (Москва) (2015-2017, 2019, 2020), «Зоркий» (2018, 2019).В чемпионатах России за "Енисей" провел 43 матча (всего - 159). В розыгрышах Кубка России сыграл 9 матчей (всего - 41). За "Енисей-2" провел 51 игру и сделал 3 результативные передачи.</p>
                   <p>Чемпион России 2021.  Второй призер чемпионата России 2015. Третий призер чемпионата России 2016. Обладатель Кубка России 2019. Чемпион мира среди юношей (U-17) 2007.</p>
                 </div>
               </div>
-              <div class="pbutton__pane js-tab-cont" id="tab-player-statistics">
-                <div class="stats" data-url="images/bg-ice.jpg">
-                  <div class="container-center">
-                    <div class="table">
-                      <ul class="filters">
-                        <li class="filters__item filters__item--105">
-                          <select class="jsdivselect0 js-already-init" style="display: none;">
-                            <option>Сезон 1</option>
-                            <option>вариант 1</option>
-                            <option>вариант 2 длинный в несколько строчек длинный</option>
-                          </select>
-                          <div id="jsdivselect0" class="js-div-select dropdown">
-                            <div class="js-div-select-title dropdown__title">
-                              <a class="js-div-select-a dropdown__link">Сезон</a>
-                            </div>
-                            <ul class="js-div-select-ul dropdown__options" style="top: 39px; left: auto;">
-                              <li class="js-div-select-li dropdown__option js-active"><a class="js-div-select-a dropdown__link">Енисей-1</a></li>
-                              <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 1</a></li>
-                              <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 2 длинный в несколько строчек длинный</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                      </ul>
-                      <div class="table-scroll">
-                        <table class="table">
-                          <thead class="table__thead">
-                          <tr class="table__row">
-                            <th class="table__th table__width-510">Чемпионат</th>
-                            <th class="table__th">И</th>
-                            <th class="table__th">В</th>
-                            <th class="table__th">Н</th>
-                            <th class="table__th">П</th>
-                            <th class="table__th">Г</th>
-                            <th class="table__th">Пр</th>
-                            <th class="table__th">Очки</th>
-                            <th class="table__th">Место</th>
-                          </tr>
-                          </thead>
-                          <tbody class="table__tbody">
-                          <tr class="table__row">
-                            <td class="table__cell table__width-510 table__left table__border-right">
-                              <a class="table__info" href="#">
-                                <div class="table__column">
-                                  <p class="table__name">Летний чемпионат “Рфл-самара” - 2023</p>
-                                  <p class="table__additional">Группа В</p>
-                                </div>
-                              </a>
-                            </td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell">999</td>
-                            <td class="table__cell table__unusual">999</td>
-                          </tr>
-                          </tbody>
-                        </table>
+              <div class="pbutton__pane js-tab-cont js-show pbutton__pane--active" id="tab-player-statistics">
+                <div class="container-center gap-20">
+                  <ul class="filters">
+                    <li class="filters__item filters__item--185">
+                      <select class="jsdivselect0 js-already-init" style="display: none;">
+                        <option>Сезон 1</option>
+                        <option>вариант 1</option>
+                        <option>вариант 2 длинный в несколько строчек длинный</option>
+                      </select>
+                      <div id="jsdivselect0" class="js-div-select dropdown">
+                        <div class="js-div-select-title dropdown__title">
+                          <a class="js-div-select-a dropdown__link">Сезон</a>
+                        </div>
+                        <ul class="js-div-select-ul dropdown__options" style="top: 39px; left: auto;">
+                          <li class="js-div-select-li dropdown__option js-active"><a class="js-div-select-a dropdown__link">Енисей-1</a></li>
+                          <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 1</a></li>
+                          <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 2 длинный в несколько строчек длинный</a></li>
+                        </ul>
                       </div>
-                    </div>
+                    </li>
+                  </ul>
+                  <div class="table-scroll">
+                    <table class="table">
+                      <thead class="table__thead">
+                      <tr class="table__row">
+                        <th class="table__th table__width-150">Сезон</th>
+                        <th class="table__th">Игры</th>
+                        <th class="table__th">Передачи</th>
+                        <th class="table__th">Мячи</th>
+                        <th class="table__th">Угловые</th>
+                        <th class="table__th">Пенальти</th>
+                        <th class="table__th">Гол+Пас</th>
+                        <th class="table__th">БК</th>
+                        <th class="table__th">КК</th>
+                        <th class="table__th">СК</th>
+                      </tr>
+                      </thead>
+                      <tbody class="table__tbody">
+                      <tr class="table__row">
+                        <td class="table__cell">20111</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell">20111</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell">Всего</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                        <td class="table__cell">999</td>
+                      </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
