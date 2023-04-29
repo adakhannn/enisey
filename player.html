@@ -187,7 +187,7 @@
               <p class="phead__text">Драничников Артем</p>
             </div>
           </div>
-          <div class="phead__container-right">
+          <div class="phead__right">
             <ul class="phead__list">
               <li class="phead__item">
                 <p class="phead__subtitle">Дата рождения</p>
@@ -212,8 +212,8 @@
             </ul>
           </div>
         </div>
-        <div class="pbuttons">
-          <section class="pbutton">
+        <div class="pbutton">
+          <section class="pbutton__container">
             <ul class="pbutton__navigation js-tabs" data-cont-id="tabs-content-player">
               <li class="pbutton__item js-active" data-tab-id="tab-player-biography">
                 <a class="pbutton__link">Биография</a>
@@ -229,67 +229,78 @@
               </li>
             </ul>
           </section>
-          <section class="pbutton">
+          <section class="pbutton__container">
             <div class="pbutton__content" id="tabs-content-player">
-              <div class="redactor-styles pbutton__pane js-tab-cont js-show pbutton__pane--active" id="tab-player-biography">
-                <p>Родился 4 августа 1990 года. Вратарь. Кандидат в мастера спорта. Воспитанник красноярской школы хоккея.</p>
-                <p>Выступал за команды «СКА-Свердловск» (2009), «Динамо» (Казань) (2015), «Динамо» (Москва) (2015-2017, 2019, 2020), «Зоркий» (2018, 2019).В чемпионатах России за "Енисей" провел 43 матча (всего - 159). В розыгрышах Кубка России сыграл 9 матчей (всего - 41). За "Енисей-2" провел 51 игру и сделал 3 результативные передачи.</p>
-                <p>Чемпион России 2021.  Второй призер чемпионата России 2015. Третий призер чемпионата России 2016. Обладатель Кубка России 2019. Чемпион мира среди юношей (U-17) 2007.</p>
+              <div class="pbutton__pane js-tab-cont js-show pbutton__pane--active" id="tab-player-biography">
+                <div class="redactor-styles">
+                  <p>Родился 4 августа 1990 года. Вратарь. Кандидат в мастера спорта. Воспитанник красноярской школы хоккея.</p>
+                  <p>Выступал за команды «СКА-Свердловск» (2009), «Динамо» (Казань) (2015), «Динамо» (Москва) (2015-2017, 2019, 2020), «Зоркий» (2018, 2019).В чемпионатах России за "Енисей" провел 43 матча (всего - 159). В розыгрышах Кубка России сыграл 9 матчей (всего - 41). За "Енисей-2" провел 51 игру и сделал 3 результативные передачи.</p>
+                  <p>Чемпион России 2021.  Второй призер чемпионата России 2015. Третий призер чемпионата России 2016. Обладатель Кубка России 2019. Чемпион мира среди юношей (U-17) 2007.</p>
+                </div>
               </div>
               <div class="pbutton__pane js-tab-cont" id="tab-player-statistics">
-<!--                <div class="stats" data-url="images/bg-ice.jpg">-->
-<!--                  <div class="container-center">-->
-<!--                    <div class="tables">-->
-<!--                      <div class="tables__item">-->
-<!--                        <ul class="filters">-->
-<!--                          <li class="filters__item filters__item&#45;&#45;105">-->
-<!--                            <select class="jsdivselect0 js-already-init" style="display: none;">-->
-<!--                              <option>Сезон 1</option>-->
-<!--                              <option>вариант 1</option>-->
-<!--                              <option>вариант 2 длинный в несколько строчек длинный</option>-->
-<!--                            </select><div id="jsdivselect0" class="js-div-select dropdown"><div class="js-div-select-title dropdown__title"><a class="js-div-select-a dropdown__link">Енисей-1</a></div><ul class="js-div-select-ul dropdown__options" style="top: 39px; left: auto;"><li class="js-div-select-li dropdown__option js-active"><a class="js-div-select-a dropdown__link">Енисей-1</a></li><li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 1</a></li><li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 2 длинный в несколько строчек длинный</a></li></ul></div>-->
-<!--                          </li>-->
-<!--                        </ul>-->
-<!--                        <table class="stat-table">-->
-<!--                          <thead>-->
-<!--                          <tr>-->
-<!--                            <th>М</th>-->
-<!--                            <th>Команда</th>-->
-<!--                            <th>И</th>-->
-<!--                            <th>В</th>-->
-<!--                            <th>Н</th>-->
-<!--                            <th>П</th>-->
-<!--                            <th>ГЗ-ГП</th>-->
-<!--                            <th>О</th>-->
-<!--                          </tr>-->
-<!--                          </thead>-->
-<!--                          <tbody>-->
-<!--                          <tr>-->
-<!--                            <td>2</td>-->
-<!--                            <td><div class="logo"><img src="images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>-->
-<!--                            <td>26</td>-->
-<!--                            <td>23</td>-->
-<!--                            <td>0</td>-->
-<!--                            <td>3</td>-->
-<!--                            <td>165-79 <span class="tb_g">[+86]</span></td>-->
-<!--                            <td>69</td>-->
-<!--                          </tr>-->
-<!--                          <tr>-->
-<!--                            <td>3</td>-->
-<!--                            <td><div class="logo"><img src="images/dev/dev-square-30x30.png" alt="Лого команды" loading="lazy"></div>Кузбасс</td>-->
-<!--                            <td>26</td>-->
-<!--                            <td>20</td>-->
-<!--                            <td>2</td>-->
-<!--                            <td>4</td>-->
-<!--                            <td>196-92 <span class="tb_g">[+104]</span></td>-->
-<!--                            <td>62</td>-->
-<!--                          </tr>-->
-<!--                          </tbody>-->
-<!--                        </table>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
+                <div class="stats" data-url="images/bg-ice.jpg">
+                  <div class="container-center">
+                    <div class="table">
+                      <ul class="filters">
+                        <li class="filters__item filters__item--105">
+                          <select class="jsdivselect0 js-already-init" style="display: none;">
+                            <option>Сезон 1</option>
+                            <option>вариант 1</option>
+                            <option>вариант 2 длинный в несколько строчек длинный</option>
+                          </select>
+                          <div id="jsdivselect0" class="js-div-select dropdown">
+                            <div class="js-div-select-title dropdown__title">
+                              <a class="js-div-select-a dropdown__link">Сезон</a>
+                            </div>
+                            <ul class="js-div-select-ul dropdown__options" style="top: 39px; left: auto;">
+                              <li class="js-div-select-li dropdown__option js-active"><a class="js-div-select-a dropdown__link">Енисей-1</a></li>
+                              <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 1</a></li>
+                              <li class="js-div-select-li dropdown__option"><a class="js-div-select-a dropdown__link">вариант 2 длинный в несколько строчек длинный</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="table-scroll">
+                        <table class="table">
+                          <thead class="table__thead">
+                          <tr class="table__row">
+                            <th class="table__th table__width-510">Чемпионат</th>
+                            <th class="table__th">И</th>
+                            <th class="table__th">В</th>
+                            <th class="table__th">Н</th>
+                            <th class="table__th">П</th>
+                            <th class="table__th">Г</th>
+                            <th class="table__th">Пр</th>
+                            <th class="table__th">Очки</th>
+                            <th class="table__th">Место</th>
+                          </tr>
+                          </thead>
+                          <tbody class="table__tbody">
+                          <tr class="table__row">
+                            <td class="table__cell table__width-510 table__left table__border-right">
+                              <a class="table__info" href="#">
+                                <div class="table__column">
+                                  <p class="table__name">Летний чемпионат “Рфл-самара” - 2023</p>
+                                  <p class="table__additional">Группа В</p>
+                                </div>
+                              </a>
+                            </td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell">999</td>
+                            <td class="table__cell table__unusual">999</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="pbutton__pane js-tab-cont" id="tab-player-career">
 

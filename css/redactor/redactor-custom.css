@@ -196,7 +196,16 @@ div.redactor-styles p {
 }
 
 
-.redactor-styles address, .redactor-styles blockquote, .redactor-styles dl, .redactor-styles figure, .redactor-styles hr, .redactor-styles ol, .redactor-styles p, .redactor-styles pre, .redactor-styles table, .redactor-styles ul {
+.redactor-styles address,
+.redactor-styles blockquote,
+.redactor-styles dl,
+.redactor-styles figure,
+.redactor-styles hr,
+.redactor-styles ol,
+.redactor-styles p,
+.redactor-styles pre,
+.redactor-styles table,
+.redactor-styles ul {
   margin-bottom: 0;
 }
 
@@ -207,22 +216,25 @@ div.redactor-styles p {
     line-height: 24px;
     text-indent: 15px;
   }
+}
 
-}@media (max-width: 780px) {
+@media (max-width: 780px) {
   div.redactor-styles p {
     font-size: 18px;
     line-height: 22px;
     text-indent: 15px;
   }
+}
 
-}@media (max-width: 480px) {
+@media (max-width: 480px) {
   div.redactor-styles p {
     font-size: 16px;
     line-height: 20px;
     text-indent: 15px;
   }
+}
 
-}@media (max-width: 320px) {
+@media (max-width: 320px) {
   div.redactor-styles p {
     font-size: 14px;
     line-height: 18px;

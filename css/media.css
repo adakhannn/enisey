@@ -54,13 +54,18 @@
     gap: 8px;
   }
 
-  .phead__container {
-    padding: 60px 100px 45px 30px;
+  .phead__content {
+    gap: 30px;
   }
 
-  .phead__container-right {
-    min-width: 562px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% -8%);
+  .phead__container {
+    padding: 60px 100px 45px 30px;
+    gap: 25px;
+  }
+
+  .phead__right {
+    min-width: 520px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%, 0% -9%);
   }
 
   .phead__number {
@@ -70,19 +75,24 @@
 
   .phead__text {
     font-size: 60px;
-    line-height: 52px;
+    line-height: 70px;
     max-width: 550px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .phead__container-right {
-    min-width: 532px;
+  .phead__right {
+    min-width: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%, 0% -10%);
   }
 
   .phead__container {
     padding: 50px 90px 35px 25px;
+  }
+
+  .phead__img {
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 
@@ -142,17 +152,21 @@
     margin: 0;
     padding: 50px 25px 25px 25px;
     flex-shrink: 1;
+    gap: 20px;
   }
 
-  .phead__container-right {
+  .phead__content {
+    gap: 25px;
+  }
+
+  .phead__right {
     clip-path: none;
     margin: 0;
-    min-width: 360px;
   }
 
   .phead__list {
     transform: none;
-    padding: 50px 25px;
+    padding: 40px 25px;
   }
 
   .phead__item {
@@ -173,6 +187,10 @@
   .phead__title {
     font-size: 30px;
     line-height: 34px;
+  }
+
+  .gap {
+    gap: 50px;
   }
 }
 
@@ -294,7 +312,7 @@
   }
 
   .phead__container {
-    gap: 20px;
+    gap: 10px;
     padding: 25px 20px;
   }
 
@@ -305,19 +323,15 @@
   }
 
   .phead__content {
-    gap: 25px;
+    gap: 20px;
   }
 
   .phead__item {
     width: auto;
   }
 
-  .phead__container-right {
+  .phead__right {
     min-width: 330px;
-  }
-
-  .phead__container {
-    max-width: min-content
   }
 
   .phead__number {
@@ -337,6 +351,11 @@
   .pbutton__link {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .phead__list {
+    gap: 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -767,15 +786,26 @@
     gap: 10px;
   }
 
-  .phead {
-    flex-direction: column;
+  .gap {
+    gap: 40px;
   }
 
   .phead__container {
+    gap: 15px;
   }
 
-  .phead__container-right {
+  .phead {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .phead__right {
     min-width: 100%;
+  }
+
+  .phead__content {
+    justify-content: center;
+    gap: 15px;
   }
 
   .phead__subtitle {
@@ -791,6 +821,10 @@
   .pbutton__link {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .phead__list {
+    padding: 25px 15px;
   }
 }
 
@@ -900,6 +934,13 @@
 
   .pbutton__link {
     padding: 5px 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pbutton__link {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -1098,29 +1139,16 @@
     gap: 5px;
   }
 
-  .phead__text {
-    font-size: 30px;
-    line-height: 40px;
+  .gap {
+    gap: 30px;
   }
 
-  .pbutton__link {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .persons {
-    grid-template-columns: repeat(1, 1fr);
+  .phead__list {
+    padding: 20px 10px;
   }
 
-  .filters {
+  .phead__content {
     gap: 10px;
-    grid-template-columns: 100%;
-  }
-
-  .trophies {
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .phead__number {
@@ -1153,9 +1181,25 @@
   }
 
   .pbutton__link {
-       font-size: 14px;
-       line-height: 18px;
+    font-size: 14px;
+    line-height: 18px;
   }
+}
+
+@media screen and (max-width: 370px) {
+  .persons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filters {
+    gap: 10px;
+    grid-template-columns: 100%;
+  }
+
+  .trophies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 @media screen and (max-width: 320px) {

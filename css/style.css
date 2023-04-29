@@ -236,6 +236,8 @@ summary {
   --blue-dark: #002142;
   --blue-dark-opacity: 0, 33, 66;
   --skyblue: #1A4A77;
+  --gray-light-1: #DFDFDF;
+  --sky: #D9EEFF;
 }
 
 html,
@@ -4232,7 +4234,7 @@ footer .map:hover:after {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 30px;
   clip-path: polygon(0 0, 77% 0, 100% 100%, 30% 100%, 0% 100%);
 }
 
@@ -4240,13 +4242,13 @@ footer .map:hover:after {
   display: flex;
   gap: 35px;
   align-items: center;
-  padding: 0 0 0 10px;
 }
 
 .phead__number {
   font-size: 180px;
   line-height: 252px;
   color: var(--carmine);
+  padding: 0 0 0 10px;
   -webkit-text-stroke: 5px var(--white);
   text-shadow:
           2px 0 var(--white),
@@ -4261,8 +4263,8 @@ footer .map:hover:after {
 
 .phead__img {
   border-radius: 50%;
-  max-width: 240px;
-  max-height: 240px;
+  max-width: 270px;
+  max-height: 270px;
   border: 15px solid var(--white);
 }
 
@@ -4274,8 +4276,9 @@ footer .map:hover:after {
   max-width: 580px;
 }
 
-.phead__container-right {
-  min-width: 592px;
+.phead__right {
+  min-width: 590px;
+  width: 100%;
   background-color: var(--carmine);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% 0%);
   margin: 0 0 0 -163px;
@@ -4308,13 +4311,13 @@ footer .map:hover:after {
   color: var(--white);
 }
 
-.pbuttons {
+.pbutton {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.pbutton {
+.pbutton__container {
   display: flex;
   font-family: "RobotoCondensed", sans-serif;
   font-weight: 700;
@@ -4327,14 +4330,21 @@ footer .map:hover:after {
 }
 
 .pbutton__link {
+  display: flex;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
   color: var(--gray-dark);
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .js-active .pbutton__link {
+  background-color: var(--red-dark);
+  color: var(--white);
+}
+
+.pbutton__link:hover {
   background-color: var(--red-dark);
   color: var(--white);
 }
@@ -4345,4 +4355,78 @@ footer .map:hover:after {
 
 .mobil-show {
   display: none;
+}
+
+.pbutton__pane {
+  display: none;
+}
+
+.pbutton__pane--active {
+  display: block;
+}
+
+.table-scroll {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.table-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__th {
+  padding: 5px 10px;
+  color: var(--red-dark);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  height: 40px;
+  text-align: center;
+}
+
+.table__cell {
+  color: var(--blue-dark);
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+
+.table__tbody .table__row {
+  border-top: 1px solid var(--gray-light-1);
+  transition: 0.3s;
+}
+
+.table__tbody .table__row:last-child {
+  border-bottom: 1px solid var(--gray-light-1);
+}
+
+.table-calendar .table__thead .table__row:first-child {
+  border: none;
+}
+
+.table-calendar .table__row:nth-child(2) .table__th {
+  height: auto;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.table__tbody .table__row:hover {
+  transition: 0.3s;
+  background-color: var(--sky);
+}
+
+.table__border-right {
+  border-right: 1px solid var(--gray-light-1);
 }
