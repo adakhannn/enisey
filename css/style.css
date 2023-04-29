@@ -4221,16 +4221,19 @@ footer .map:hover:after {
   line-height: 24px;
 }
 
-.gap {
+.player {
   display: flex;
   flex-direction: column;
   gap: 60px;
   padding: 30px 0;
 }
 
-.gap-20 {
+.gap {
   display: flex;
   flex-direction: column;
+}
+
+.gap--20 {
   gap: 20px;
 }
 
@@ -4262,15 +4265,7 @@ footer .map:hover:after {
   color: var(--carmine);
   padding: 0 0 0 10px;
   -webkit-text-stroke: 5px var(--white);
-  text-shadow:
-          2px 0 var(--white),
-          -2px 0 var(--white),
-          0 2px var(--white),
-          0 -2px var(--white),
-          1px 1px var(--white),
-          -1px -1px var(--white),
-          1px -1px var(--white),
-          -1px 1px var(--white);
+  text-shadow: 2px 0 var(--white), -2px 0 var(--white), 0 2px var(--white), 0 -2px var(--white), 1px 1px var(--white), -1px -1px var(--white), 1px -1px var(--white), -1px 1px var(--white);
 }
 
 .phead__img {
@@ -4294,6 +4289,7 @@ footer .map:hover:after {
   background-color: var(--carmine);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% 0%);
   margin: 0 0 0 -163px;
+  overflow: hidden;
 }
 
 .phead__list {
@@ -4395,7 +4391,7 @@ footer .map:hover:after {
   border-collapse: collapse;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -4413,6 +4409,7 @@ footer .map:hover:after {
   height: 30px;
   text-align: center;
   background-color: var(--blue);
+  font-weight: 700;
 }
 
 .table__th:first-child {
@@ -4424,6 +4421,7 @@ footer .map:hover:after {
   text-align: center;
   padding: 10px;
   height: 40px;
+  font-weight: 700;
 }
 
 .table__cell:first-child {
@@ -4435,27 +4433,9 @@ footer .map:hover:after {
   transition: 0.3s;
 }
 
-.table__tbody .table__row:last-child {
-  border-bottom: 1px solid var(--gray-light-1);
-}
-
-.table-calendar .table__thead .table__row:first-child {
-  border: none;
-}
-
-.table-calendar .table__row:nth-child(2) .table__th {
-  height: auto;
-  font-weight: 500;
-  line-height: 16px;
-}
-
 .table__tbody .table__row:hover {
   transition: 0.3s;
   background-color: var(--sky);
-}
-
-.table__border-right {
-  border-right: 1px solid var(--gray-light-1);
 }
 
 .table__width-150 {
