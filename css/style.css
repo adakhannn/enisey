@@ -4240,11 +4240,14 @@ footer .map:hover:after {
 .gap {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
 .gap--20 {
   gap: 20px;
+}
+
+.gap--30 {
+  gap: 30px;
 }
 
 .phead {
@@ -4409,7 +4412,7 @@ footer .map:hover:after {
   background-color: var(--bisque);
 }
 
-.color-blue {
+.table__row--blue {
   background-color: var(--azure);
 }
 
