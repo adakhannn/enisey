@@ -4234,12 +4234,13 @@ footer .map:hover:after {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding: 30px 0;
+  padding: 30px 0 80px 0;
 }
 
 .gap {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .gap--20 {
@@ -4408,7 +4409,7 @@ footer .map:hover:after {
   background-color: var(--bisque);
 }
 
-.table__row:last-child {
+.color-blue {
   background-color: var(--azure);
 }
 
@@ -4449,4 +4450,8 @@ footer .map:hover:after {
 
 .table__width-150 {
   width: 150px;
+}
+
+.table__width-80 {
+ width: 80px;
 }
