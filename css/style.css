@@ -4468,7 +4468,7 @@ footer .map:hover:after {
   gap: 10px;
   height: 35px;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   padding: 0 10px;
   background-color: var(--azure);
 }
