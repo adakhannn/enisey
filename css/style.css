@@ -4458,3 +4458,28 @@ footer .map:hover:after {
 .table__width-80 {
  width: 80px;
 }
+
+.table__width-95 {
+  width: 95px;
+}
+
+.theader {
+  display: flex;
+  gap: 10px;
+  height: 35px;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  background-color: var(--azure);
+}
+
+.theader__text {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+.theader__img {
+  border-radius: 50%;
+}
