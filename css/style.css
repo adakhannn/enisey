@@ -4468,10 +4468,9 @@ footer .map:hover:after {
   gap: 10px;
   height: 35px;
   align-items: center;
-  min-width: 650px;
+  max-width: 100%;
   padding: 0 10px;
   background-color: var(--azure);
-  overflow: scroll;
 }
 
 .theader__text {
