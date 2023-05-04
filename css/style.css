@@ -4483,3 +4483,13 @@ footer .map:hover:after {
 .theader__img {
   border-radius: 50%;
 }
+
+.picture {
+  width: 100%;
+  display: flex;
+}
+
+.picture__img {
+  width: 100%;
+  height: auto;
+}
