@@ -2638,6 +2638,11 @@ main.full {
   margin-bottom: 40px;
 }
 
+.content .detail .detail__img {
+  width: auto;
+  margin: 0;
+}
+
 .content .detail .img {
   max-height: 500px;
   overflow: hidden;
