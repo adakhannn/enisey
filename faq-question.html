@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Верстка страницы игроков</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+<body class="body">
+<div class="goldesign_wrap">
+    <div class="content">
+        <div class="container-center">
+            <main>
+                <div class="sale-form">
+                    <h2 class="title-h">Задать вопрос</h2>
+                    <form method="post" action="/faq/add.php" class="siteform addfaq" name="addingform">
+                        <input type="hidden" value="add_question" name="action">
+                        <ul>
+                            <li class="title_table">Как Вас зовут</li>
+                            <li>
+                                <input type="text" id="name" name="name" value="">
+                            </li>
+                            <li class="title_table">Ваш Email</li>
+                            <li>
+                                <input type="text" id="email" name="email" value="" required="">
+                            </li>
+                            <li class="title_table">Город</li>
+                            <li>
+                                <input type="text" id="city" name="city" value="">
+                            </li>
+                            <li class="title_table">Сообщение</li>
+                            <li class="li-textarea">
+                                <textarea name="question" required=""></textarea>
+                            </li>
+                            <li class="title_table">Защитный код</li>
+                            <li>
+                                тут будет рекаптча
+                                <input class="grcode" type="text" id="grcode" name="grcode" value="" required="">
+                            </li>
+                        </ul>
+                        <div id="send">
+                            <input type="submit" value="Отправить сообщение" class="send_btn">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+</body>
+</html>
