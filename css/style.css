@@ -1486,7 +1486,7 @@ header .top-red .right a:hover {
 .content .stats .stat-table th {
   font-size: 16px;
   line-height: 18px;
-  padding: 8px 6px;
+  padding: 8px 20px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -1512,7 +1512,7 @@ header .top-red .right a:hover {
 .content .stats .stat-table td {
   font-size: 16px;
   line-height: 18px;
-  padding: 13px 6px 11px;
+  padding: 13px 20px 11px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -1564,7 +1564,7 @@ header .top-red .right a:hover {
 
 .content .stats .stat-table.char th:nth-child(1), .content .stats .stat-table.char td:nth-child(1) {
   width: 50%;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -1645,6 +1645,10 @@ header .top-red .right a:hover {
   font-size: 18px;
   text-transform: uppercase;
   padding: 12px;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .other-games-list li .team p {
